@@ -29,7 +29,7 @@ export const Hero = () => {
         </div>
         {/* Demo RainbowKit Button */}
         <div className="flex justify-center mb-4">
-          <CustomBtnApp className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-all duration-200 font-medium" />
+          <CustomBtnApp className="px-10 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-all duration-200 font-medium" />
         </div>
       </div>
 

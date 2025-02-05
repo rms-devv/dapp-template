@@ -12,6 +12,7 @@ export const CustomBtnApp: React.FC<{ className?: string }> = ({
         chain,
         openChainModal,
         openConnectModal,
+        openAccountModal,
         authenticationStatus,
         mounted,
       }) => {
@@ -61,12 +62,16 @@ export const CustomBtnApp: React.FC<{ className?: string }> = ({
                 );
               }
               return (
-                <div className={className}>
-                  <div className="flex flex-col">
-                    <span>
+                <button
+                  onClick={openAccountModal}
+                  className={`${className} hover:bg-gray-100 transition-colors `}
+                >
+                  <div className="flex">
+                    <span className="mr-2">
                       {account.address.substring(0, 6)}...
                       {account.address.substring(account.address.length - 4)}
-                    </span>
+                    </span> 
+                    <span className="mx-2">|</span>
                     <span>
                       {isBalanceLoading
                         ? "Loading..."
@@ -75,7 +80,7 @@ export const CustomBtnApp: React.FC<{ className?: string }> = ({
                           )} ETH`}
                     </span>
                   </div>
-                </div>
+                </button>
               );
             })()}
           </div>
