@@ -25,7 +25,10 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       });
     } else {
       setAddress(null);
-      showErrorToast("Wallet disconnected");
+      showErrorToast({
+        title: "Wallet Disconnected",
+        description: "Please connect your wallet",
+      });
     }
   }, [address, setAddress]);
 
@@ -45,7 +48,10 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
           });
         } else {
           setAddress(null);
-          showErrorToast("Account disconnected");
+          showErrorToast({
+            title: "Wallet Disconnected",
+            description: "Please connect your wallet",
+          });
         }
       },
     });

@@ -1,27 +1,39 @@
 // utils/toast.ts
 import { toast } from "@/hooks/use-toast";
 
-interface SuccessToastProps {
+interface ToastProps {
   title?: string;
   description: string;
 }
 
+
+
 export const showSuccessToast = ({
   title = "Success",
   description,
-}: SuccessToastProps) => {
+}: ToastProps) => {
   toast({
     title,
     description,
-    className: "w-full border border-gray-700 bg-black text-white",
+    style: {
+      backgroundColor: "black",
+      color: "#fff",
+    },
+  className: "w-full border border-gray-700",
   });
 };
 
-export const showErrorToast = (description: string) => {
+export const showErrorToast = ({
+  title = "Error",
+  description,
+}: ToastProps) => {
   toast({
-    title: "Error",
+    title,
     description,
-    variant: "destructive",
-    className: "w-full border border-gray-700 bg-black text-white",
+    style: {
+      backgroundColor: "black",
+      color: "#fff",
+    },
+  className: "w-full border border-gray-700",
   });
 };

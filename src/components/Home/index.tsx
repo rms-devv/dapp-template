@@ -7,7 +7,6 @@ import { CustomBtnApp } from "../connect-btn";
 export const Hero = () => {
   return (
     <div className="min-h-screen py-10 flex flex-col items-center justify-center text-white p-4">
-      {/* Main Title Section */}
       <div className="max-w-4xl text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 ">
          <span className=" bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">DApp Template Kit</span>🚀
