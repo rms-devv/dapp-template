@@ -15,8 +15,8 @@
 }
 
 body {
-  color: var(--foreground);
-  background-color: #110724 !important;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,53,102,1) 49%, rgba(127,156,219,1) 100%);
 }
 
 @layer components {
