@@ -1,5 +1,7 @@
 # DApp Template Kit
 
+[DOCS](https://deepwiki.com/rms-devv/dapp-template/7-configuration-and-setup) 
+
 A complete template to quickly start your Web3 projects with the best technologies.
 
 ## 🚀 Technologies
